@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizzler</title>
+    <title>The Quiz Room</title>
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js"></script>
 </head>
 <body>
+    <div id="background"></div>
+    <main id="paperBg">
+        
+        <header>
+            <h1 id="quizTitle">Select a Quiz</h1>
+        </header>
+        <section id="questionSec">
+            <h2 id="questionText"> Questions go here! </h2>
+            <div id="answersBtns"></div>
+        </section>
+        <div id="nav">
+            <button id="prevBtn"> Previous Question</button>
+            <button id="nxtBtn"> Next Question</button>
+        </div>
+        <section id="testRes">
+            <h2 id="grade">Your grdae</h2>
+            <div id="missQues"></div>
+            <button id="playAgainBtn"></button>
+            <button id="changeTestBtn"></button>
+        </section>
+    </main>
     
 </body>
-
+</html>

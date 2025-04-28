@@ -16,12 +16,19 @@
         <section id="questionSec">
             <h2 id="questionText"> Questions go here! </h2>
             <div id="answersBtns">
-                <button id="A">A</button>
-                <button id="B">B</button>
-                <button id="C">C</button>
-                <button id="D">D</button>
+                <div class="answerA">
+                    <button id="aBtn">A</button><span id="aTxt"></span>
+                  </div>
+                  <div class="answerB">
+                    <button id="bBtn">B</button><span id="bTxt"></span>
+                  </div>
+                  <div class="answerC">
+                    <button id="cBtn">C</button><span id="cTxt"></span>
+                  </div>
+                  <div class="answerD">
+                    <button id="dBtn">D</button><span id="dTxt"></span>
+                </div>
             </div>
-
         </section>
         <div id="nav">
             <button id="prevBtn"> Previous Question</button>
@@ -30,8 +37,8 @@
         <section id="results">
             <h2 id="grade">Your grade</h2>
             <div id="missQues"></div>
-            <button id="playAgainBtn"></button>
-            <button id="changeTestBtn"></button>
+            <button id="playAgainBtn">Quiz me again!</button>
+            <button id="changeTestBtn">Change Quiz</button>
         </section>
     </main>
 </body>

@@ -1,20 +1,3 @@
-/*to pick back up where oyu left off after your html is done we are going to add an
- animated school packground to the design or mayble an old school desk design so that 
- it looks like youre taking a test when you were a kid and then the grading pop up window 
- will give you letter grade in that clasic red pen/marker and then the end user can try againn
- for a better score or try a different exam 
- 
- cherry on top/ice box after you get the test working/ mvp itd be cool i f you could turn the cursor into a number 2 pencil
- and the instead of the buttons being the answer we could have the user click the letter A,B,C,D and the clicked one
- gets a "hand drawn circle i think thatd make the nostalgic quiz vibe go over the top."
- 
- */
-
- /* for the exam im thingking 3 difficulties one simple like animal facts , a medium onw like country capitals
- and then the hardest one could be a coding one or something like that way when the project is over i can turn the 
- hard one into a quiz for nani to study for his GC license exam*/
-
-
 html, body {
     height: 100%;
     margin: 0;
@@ -60,7 +43,7 @@ header h1 {
 #answersBtns {
     display: flex;
     flex-direction: column;
-    align-items:flex-start
+    align-items:flex-start;
     gap: 10px;
     margin-left: 20px;
 }
@@ -97,7 +80,7 @@ header h1 {
     background-color: #b97a56;
 }
 
-#testRes {
+#results {
     margin-top: 30px;
     text-align: center;
     display: none;
@@ -112,7 +95,7 @@ header h1 {
     margin-bottom: 20px;
 }
 
-#testRes button {
+#results button {
     margin-top: 10px;
     padding: 10px;
     background: #eee;
@@ -120,6 +103,11 @@ header h1 {
     cursor: pointer;
 }
 
-#testRes button:hover {
+#results button:hover {
     background-color: #4f4954;
 }
+
+.selected {
+    background-color: #cce5ff;
+    font-weight: bold;
+  }

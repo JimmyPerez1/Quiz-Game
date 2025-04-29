@@ -96,11 +96,9 @@ answerBtns.forEach((btn, idx) => {
 })
 
 nxtBtn.addEventListener('click', () => {
-  if (questionIdx < questions.length -1) {
+  {
     questionIdx++;
     render();
-  } else {
-    render()
   }
 })
 
@@ -170,7 +168,7 @@ function renderResults() {
 let missedList = ''
 questions.forEach((q, idx) => {
   if (q.playerAnswer !== q.correctAnswer) {
-    missedList += `Q${idx + 1}: ${q.question}<br>`
+    missedList += `Q${idx + 1}: ${q.question}\n`
   }
 })
 
@@ -179,12 +177,3 @@ missQuesEl.textContent = missedList || 'Congrats you got them all right!'
 
 
 init()
-
-// 	On page load: pop up to select a quiz  (icebox for now get the quiz working first)
-//  so for now Show first question and answers
-// 	On answer click: Record selection, highlight choice
-// 	On “Next”: Advance to next question
-// 	On last question: Calculate final score and grade
-// 	On quiz end: Display grade, missed questions, replay/change options
-// 	“Play Again”: Reset state and replay
-// 	“Change Test”: Select new quiz category

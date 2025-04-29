@@ -73,6 +73,7 @@ const questionTextEl = document.getElementById('questionText');
 const nxtBtn = document.getElementById('nxtBtn');
 const gradeEl = document.getElementById('grade');
 const missQuesEl = document.getElementById('missQues');
+const playAgainBtn = document.getElementById('playAgainBtn');
 
 const answerBtns = [
   document.getElementById('aBtn'),
@@ -93,16 +94,16 @@ answerBtns.forEach((btn, idx) => {
   btn.addEventListener('click', () => {
     handleAnswers(idx);
   })
-})
+});
 
 nxtBtn.addEventListener('click', () => {
   {
     questionIdx++;
     render();
   }
-})
+});
 
-
+playAgainBtn.addEventListener('click', playAgain);
 
 /*----- functions -----*/ 
 
@@ -112,7 +113,7 @@ function init () {
   results = null
 
   render();
-}
+};
 
 function render() {
   if (questionIdx < questions.length) {
@@ -120,7 +121,7 @@ function render() {
   } else {
     renderResults();
   }
-}
+};
 
 function renderCurrentQuestion() {
   const currentQ = questions[questionIdx];
@@ -134,13 +135,13 @@ function renderCurrentQuestion() {
   if (currentQ.playerAnswer !== null) {
     answerBtns[currentQ.playerAnswer].classList.add('selected')
   }
-}
+};
 
 function handleAnswers(idx) {
   const currentQ = questions[questionIdx];
   currentQ.playerAnswer = idx
   render()
-}
+};
 
 function renderResults() {
   document.getElementById('questionSec').style.display = 'none'
@@ -168,12 +169,23 @@ function renderResults() {
 let missedList = ''
 questions.forEach((q, idx) => {
   if (q.playerAnswer !== q.correctAnswer) {
-    missedList += `Q${idx + 1}: ${q.question}\n`
-  }
+    missedList += `Q${idx + 1}: ${q.question}<br>Correct Answer: ${q.answers[q.correctAnswer]}<br><br>`
+  };
 })
 
-missQuesEl.textContent = missedList || 'Congrats you got them all right!'
-}
+missQuesEl.innerHTML = missedList || 'Congrats you got them all right!'
+};
 
+function playAgain() {
+
+  init();
+
+
+  document.getElementById('questionSec').style.display = 'block';
+  document.getElementById('nav').style.display = 'flex';
+  
+ 
+  document.getElementById('results').style.display = 'none';
+}
 
 init()

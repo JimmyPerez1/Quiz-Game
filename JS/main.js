@@ -70,8 +70,9 @@ let results;
 
 /*----- cached elements  -----*/
 const questionTextEl = document.getElementById('questionText');
-const prevBtn = document.getElementById('prevBtn');
 const nxtBtn = document.getElementById('nxtBtn');
+const gradeEl = document.getElementById('grade');
+const missQuesEl = document.getElementById('missQues');
 
 const answerBtns = [
   document.getElementById('aBtn'),
@@ -87,6 +88,22 @@ const answerTexts = [
   document.getElementById('dTxt')
 ];
 /*----- event listeners -----*/
+
+answerBtns.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    handleAnswers(idx);
+  })
+})
+
+nxtBtn.addEventListener('click', () => {
+  if (questionIdx < questions.length -1) {
+    questionIdx++;
+    render();
+  } else {
+    render()
+  }
+})
+
 
 
 /*----- functions -----*/ 
@@ -121,7 +138,48 @@ function renderCurrentQuestion() {
   }
 }
 
+function handleAnswers(idx) {
+  const currentQ = questions[questionIdx];
+  currentQ.playerAnswer = idx
+  render()
+}
+
+function renderResults() {
+  document.getElementById('questionSec').style.display = 'none'
+  document.getElementById('nav').style.display = 'none'
+
+  document.getElementById('results').style.display = 'block'
+  const questionsCorrect = questions.filter(q => q.playerAnswer === q.correctAnswer).length
+  let letterGrade
+  const percent = (questionsCorrect / questions.length) * 100;
+
+  if (percent >= 90) {
+    letterGrade = 'A'
+  } else if (percent >= 80) {
+    letterGrade = 'B'
+  }  else if (percent >= 70) {
+    letterGrade = 'C'
+  }  else if (percent >= 60) {
+    letterGrade = 'D'
+  } else {
+    letterGrade = 'F'
+  }
+
+  gradeEl.textContent = `Final Grade: ${letterGrade} (${questionsCorrect}/${questions.length} correct)`;
+
+let missedList = ''
+questions.forEach((q, idx) => {
+  if (q.playerAnswer !== q.correctAnswer) {
+    missedList += `Q${idx + 1}: ${q.question}<br>`
+  }
+})
+
+missQuesEl.textContent = missedList || 'Congrats you got them all right!'
+}
+
+
 init()
+
 // 	On page load: pop up to select a quiz  (icebox for now get the quiz working first)
 //  so for now Show first question and answers
 // 	On answer click: Record selection, highlight choice

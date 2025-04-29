@@ -75,6 +75,7 @@ const gradeEl = document.getElementById('grade');
 const missQuesEl = document.getElementById('missQues');
 const playAgainBtn = document.getElementById('playAgainBtn');
 
+
 const answerBtns = [
   document.getElementById('aBtn'),
   document.getElementById('bBtn'),
@@ -146,7 +147,7 @@ function handleAnswers(idx) {
 function renderResults() {
   document.getElementById('questionSec').style.display = 'none'
   document.getElementById('nav').style.display = 'none'
-
+  document.getElementById('quizTitle').textContent = "Quiz Results";
   document.getElementById('results').style.display = 'block'
   const questionsCorrect = questions.filter(q => q.playerAnswer === q.correctAnswer).length
   let letterGrade
@@ -177,9 +178,7 @@ missQuesEl.innerHTML = missedList || 'Congrats you got them all right!'
 };
 
 function playAgain() {
-
   init();
-
 
   document.getElementById('questionSec').style.display = 'block';
   document.getElementById('nav').style.display = 'flex';

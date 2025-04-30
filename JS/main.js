@@ -62,7 +62,10 @@ const quiz1 = [
     playerAnswer: null
   }
 ];
+const quiz2 = [ /* ...medium quiz questions */ 
 
+];
+const quiz3 = [ /* ...hard quiz questions */ ];
 /*----- state variables -----*/
 let questionIdx;
 let questions;
@@ -98,10 +101,8 @@ answerBtns.forEach((btn, idx) => {
 });
 
 nxtBtn.addEventListener('click', () => {
-  {
     questionIdx++;
     render();
-  }
 });
 
 playAgainBtn.addEventListener('click', playAgain);

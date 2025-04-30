@@ -6,7 +6,7 @@ The Quiz Room is a lighthearted, classroom-themed multiple-choice quiz game desi
 
 ## Screenshots
 
-![Welcome Screen](pending the multiple quiz update)
+![Welcome Screen](https://i.imgur.com/HHlaEoM.png)
 
 ![Quiz Question](https://i.imgur.com/fpVJQoU.png)
 
@@ -28,7 +28,8 @@ The Quiz Room is a lighthearted, classroom-themed multiple-choice quiz game desi
 Take a look at the planning and live project here:
 
 - [View Project Planning](https://trello.com/b/HWlxqldk/the-quiz-game)
-- [Play The Quiz Room](#)
+
+- [Play The Quiz Room](https://jimmyperez1.github.io/Quiz-Game/)
 
 ---
 

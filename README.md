@@ -36,7 +36,7 @@ Take a look at the planning and live project here:
 ## Future Enhancements
 
 - Add multiple quiz categories (Easy, Medium, Hard)
+- Track high scores locally
 - Animate the pencil cursor and answer selection
 - Add sound effects for correct and incorrect answers
-- Track high scores locally
 - Improve accessibility and mobile responsiveness

@@ -79,6 +79,7 @@ const missQuesEl = document.getElementById('missQues');
 const playAgainBtn = document.getElementById('playAgainBtn');
 const quizSelectEl = document.getElementById('quizSelect');
 const quizSelectBtns = quizSelectEl.querySelectorAll('button');
+const changeTestBtn = document.getElementById('changeTestBtn');
 
 const answerBtns = [
   document.getElementById('aBtn'),
@@ -121,6 +122,8 @@ nxtBtn.addEventListener('click', () => {
 });
 
 playAgainBtn.addEventListener('click', playAgain);
+
+changeTestBtn.addEventListener('click', changeQuiz);
 
 /*----- functions -----*/ 
 
@@ -197,6 +200,14 @@ function playAgain() {
   init();
   document.getElementById('questionSec').style.display = 'block';
   document.getElementById('nav').style.display = 'flex';
+  document.getElementById('results').style.display = 'none';
+}
+
+function changeQuiz() {
+  document.getElementById('quizTitle').textContent = 'Welcome to your Quiz';
+  document.getElementById('quizSelect').style.display = 'block';
+  document.getElementById('questionSec').style.display = 'none';
+  document.getElementById('nav').style.display = 'none';
   document.getElementById('results').style.display = 'none';
 }
 

@@ -134,3 +134,11 @@ header h1 {
     background-color: #000000;
     font-weight: bold;
 }
+
+#grade {
+    font-size: 2rem;
+    color: #dc143c;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px 0 #ffffff;
+    margin-bottom: 15px;
+}

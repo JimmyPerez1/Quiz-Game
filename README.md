@@ -8,7 +8,7 @@ The Quiz Room is a lighthearted, classroom-themed multiple-choice quiz game desi
 
 ![Welcome Screen](https://i.imgur.com/HHlaEoM.png)
 
-![Quiz Question](https://i.imgur.com/fpVJQoU.png)
+![Quiz Question](https://i.imgur.com/dBQXSNA.png)
 
 
 ![Results Screen](https://i.imgur.com/1fPaebA.png)
@@ -35,7 +35,6 @@ Take a look at the planning and live project here:
 
 ## Future Enhancements
 
-- Add multiple quiz categories (Easy, Medium, Hard)
 - Track high scores locally
 - Animate the pencil cursor and answer selection
 - Add sound effects for correct and incorrect answers

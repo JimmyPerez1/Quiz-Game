@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Comic Sans MS', sans-serif;
-  }
+}
 
 #background {
     position: fixed;
@@ -21,18 +21,30 @@ html, body {
     margin: 50px auto;
     padding: 20px;
     min-height: 75vh;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 header h1 {
     text-align: center;
     margin-bottom: 48px;
     font-size: 3rem;
-  }
+}
+
+#quizSelect {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#quizSelect button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
 #questionSec {
     text-align: center;
+    display: none;
 }
 
 #questionText {
@@ -77,6 +89,7 @@ header h1 {
     display: flex;
     justify-content: right;
     margin-top: 47px;
+    display: none;
 }
 
 #nav button {
@@ -118,6 +131,6 @@ header h1 {
 }
 
 .selected {
-    background-color: black;
+    background-color: #000000;
     font-weight: bold;
-  }
+}

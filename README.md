@@ -1,7 +1,6 @@
 # The Quiz Room: A Nostalgic Classroom Quiz
 
-The Quiz Room is a lighthearted, classroom-themed multiple-choice quiz game designed to bring a little nostalgia to your screen.  
-With a lined paper background and simple answer selections, the goal is to test your knowledge (and maybe your memory) in a relaxed and familiar setting.
+The Quiz Room is a lighthearted, classroom-themed multiple-choice quiz game designed to bring a little nostalgia to your screen. With a lined paper background and simple answer selections, the goal is to test your knowledge (and maybe your memory) in a relaxed and familiar setting.
 
 ---
 
@@ -28,7 +27,7 @@ With a lined paper background and simple answer selections, the goal is to test 
 
 Take a look at the planning and live project here:
 
-- [View Project Planning](#)
+- [View Project Planning](https://trello.com/b/HWlxqldk/the-quiz-game)
 - [Play The Quiz Room](#)
 
 ---

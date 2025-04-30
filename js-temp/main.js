@@ -77,7 +77,8 @@ const nxtBtn = document.getElementById('nxtBtn');
 const gradeEl = document.getElementById('grade');
 const missQuesEl = document.getElementById('missQues');
 const playAgainBtn = document.getElementById('playAgainBtn');
-
+const quizSelectEl = document.getElementById('quizSelect');
+const quizSelectBtns = quizSelectEl.querySelectorAll('button');
 
 const answerBtns = [
   document.getElementById('aBtn'),
@@ -93,6 +94,20 @@ const answerTexts = [
   document.getElementById('dTxt')
 ];
 /*----- event listeners -----*/
+quizSelectBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const selected = btn.getAttribute('data-quiz');
+    if (selected === '1') questions = quiz1;
+    if (selected === '2') questions = quiz2;
+    if (selected === '3') questions = quiz3;
+
+    quizSelectEl.style.display = 'none';
+    document.getElementById('questionSec').style.display = 'block';
+    document.getElementById('nav').style.display = 'flex';
+
+    init();
+  });
+});
 
 answerBtns.forEach((btn, idx) => {
   btn.addEventListener('click', () => {
@@ -111,7 +126,7 @@ playAgainBtn.addEventListener('click', playAgain);
 
 function init () {
   questionIdx = 0
-  questions = quiz1 //just incase I want to make multiple quizzes later 
+  questions = quiz1
   results = null
 
   render();
@@ -180,11 +195,8 @@ missQuesEl.innerHTML = missedList || 'Congrats you got them all right!'
 
 function playAgain() {
   init();
-
   document.getElementById('questionSec').style.display = 'block';
   document.getElementById('nav').style.display = 'flex';
-  
- 
   document.getElementById('results').style.display = 'none';
 }
 

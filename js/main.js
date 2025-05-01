@@ -156,7 +156,7 @@ const quiz3 = [
 },
 {
     question: "Which desert is the largest in the world (by area)?",
-    answers: ['Sahara', 'Gobi', 'Arctic', 'Antarctic'],
+    answers: ['Sahara', 'Gobi', 'Arctic', 'Antarctica'],
     correctAnswer: 3,
     playerAnswer: null
 },

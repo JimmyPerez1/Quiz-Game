@@ -1,4 +1,4 @@
-# The Quiz Room: A Nostalgic Classroom Quiz
+# Quizzzel: A Nostalgic Classroom Quiz
 
 The Quiz Room is a lighthearted, classroom-themed multiple-choice quiz game designed to bring a little nostalgia to your screen. With a lined paper background and simple answer selections, the goal is to test your knowledge (and maybe your memory) in a relaxed and familiar setting.
 

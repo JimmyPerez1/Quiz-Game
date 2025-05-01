@@ -263,12 +263,14 @@ function init () {
 };
 
 function render() {
+  if (!questions) return;
+
   if (questionIdx < questions.length) {
     renderCurrentQuestion();
   } else {
     renderResults();
   }
-};
+}
 
 function renderCurrentQuestion() {
   const currentQ = questions[questionIdx];
@@ -303,9 +305,9 @@ function renderResults() {
     letterGrade = 'A'
   } else if (percent >= 80) {
     letterGrade = 'B'
-  }  else if (percent >= 70) {
+  } else if (percent >= 70) {
     letterGrade = 'C'
-  }  else if (percent >= 60) {
+  } else if (percent >= 60) {
     letterGrade = 'D'
   } else {
     letterGrade = 'F'

@@ -29,7 +29,7 @@ Take a look at the planning and live project here:
 
 - [View Project Planning](https://trello.com/b/HWlxqldk/the-quiz-game)
 
-- [Play The Quiz Room](https://jimmyperez1.github.io/Quiz-Game/)
+- [Play The Quiz Game](https://jimmyperez1.github.io/Quiz-Game/)
 
 ---
 

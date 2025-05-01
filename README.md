@@ -39,3 +39,10 @@ Take a look at the planning and live project here:
 - Animate the pencil cursor and answer selection
 - Add sound effects for correct and incorrect answers
 - Improve accessibility and mobile responsiveness
+
+---
+
+## Attributions
+- Classroom background image by [Freepik](https://www.freepik.com)
+- Notebook paper background by [Freepik](https://www.freepik.com)
+- "Permanent Marker" font from [Google Fonts](https://fonts.google.com/specimen/Permanent+Marker)
